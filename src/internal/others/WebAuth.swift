@@ -13,7 +13,7 @@ enum WebAuth {
 }
 
 private final class WebAuthCancellationBox: @unchecked Sendable {
-    @MainActor var cancellation: (() -> Void)?
+    var cancellation: (() -> Void)?
 }
 
 @MainActor
